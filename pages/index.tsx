@@ -1,12 +1,12 @@
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 
 export default function Home() {
 	const router = useRouter();
 	const [name, setName] = useState("");
 	const [phoneNumber, setPhoneNumber] = useState("");
 
-	const handleSubmit = (e: any) => {
+	const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 
 		router.push(`/chat?name=${name}&phone=${phoneNumber}`);
