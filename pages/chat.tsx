@@ -65,6 +65,10 @@ export default function Chat() {
 		// don't change anything if it's the same chat
 		if (session?.groupName === group) return;
 
+		if (session?.groupName) {
+			socketRef.current.emit("leave", session.groupName);
+		}
+
 		setChatList([]);
 
 		socketRef.current.emit("join", group);
@@ -80,6 +84,10 @@ export default function Chat() {
 
 		// don't change anything if it's the same chat
 		if (session?.groupName === groupName) return;
+
+		if (session?.groupName) {
+			socketRef.current.emit("leave", session.groupName);
+		}
 
 		setChatList([]);
 
