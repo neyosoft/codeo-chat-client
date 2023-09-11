@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project.
 
+This application showcases the implementation of both one-to-one and group chat functionalities.
+
 ## Getting Started
 
 First install the dependencies
