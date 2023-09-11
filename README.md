@@ -25,6 +25,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### Future improvement
 
 -   [ ] UI/UX improvement
--   [ ] Authentication
+-   [ ] Implement user registration and authentication to ensure secure access to the messaging system.
+-   [ ] Create APIs/routes for managing contacts (e.g., add, remove, list).
+-   [ ] Implement real-time updates for incoming messages.
 -   [ ] Chat validation
 -   [ ] Error handling
+-   [ ] Chat persistence to Database like Posgress or MongoDB
+-   [ ] Write unit tests and integration tests
