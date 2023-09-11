@@ -11,6 +11,8 @@ interface UserChatSession {
 }
 
 export interface ChatItem {
+	group: string;
+	id: string;
 	message: string;
 	name: string;
 	phone: string;
